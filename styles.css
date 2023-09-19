@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+ul{
+    list-style: none;
+}
+.navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar li{
+    padding : 0 20px;
+}
+
+#name{
+    color: #b3d7ff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 980px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #b3d7ff;
+    font-size: 18px;
+    font-weight: 520;
+}
+
+/* Home page  */
+
+#bio{
+    display: flex;
+    height: 50%;
+    margin-top: 120px;
+}
+
+#intro{
+    width: fit-content;
+    margin-top: 190px;
+    margin-left: 200px;
+}
+
+/* My name  */
+#hw{
+    /* color: yellow; */
+    color: #ffffcc;
+    font-weight: 800;
+    font-size: 50px;
+    position: relative;
+    opacity: 0;
+    left: -100%;
+    animation: slide-in 0.7s forwards;
+
+}
+@keyframes slide-in {
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+/* Other content  */
+.mi{
+    color:#dddddd;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+	opacity: 0;
+	/* top: 100%; */
+    left: -100%;
+    animation: slide-inr 0.9s forwards;
+}
+@keyframes slide-inr {
+    to {
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+/* Home page image  */
+#image{
+    background-image: url("Assets/IMG_20200816_173312-compressed-3.jpg");
+    background-size: cover;
+    margin-left: 300px;
+    margin-top: 70px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
