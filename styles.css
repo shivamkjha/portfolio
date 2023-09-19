@@ -15,6 +15,8 @@ ul{
     list-style: none;
 }
 .navigation{
+    display: flex;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +37,7 @@ ul{
     color: #b3d7ff;
     font-size: 20px;
     font-weight: 600;
-    margin-right: 980px;
+    margin-right: 930px;
 }
 .navbar li a{
     text-decoration: none;
@@ -96,6 +98,7 @@ ul{
     }
 }
 
+/* Home page image  */
 /* Home page image  */
 #image{
     background-image: url("Assets/IMG_20200816_173312-compressed-3.jpg");

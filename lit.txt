@@ -1,0 +1,13 @@
+1. so Day 1 of making this website : its not working well with different screens
+2. Need to learn more about the flex and grid thing.
+
+
+
+
+
+
+
+LESSONS:
+
+1. Its better to spend time on "what to do" first before running to "how to do"
+2. Its a learning journey , have patience
