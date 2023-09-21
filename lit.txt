@@ -1,5 +1,6 @@
 1. so Day 1 of making this website : its not working well with different screens
 2. Need to learn more about the flex and grid thing.
+3. Flex wrap, vmax, vmin ,vh, vw
 
 
 
