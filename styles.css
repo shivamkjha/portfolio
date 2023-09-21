@@ -37,6 +37,7 @@ ul{
 #name{
     color: #b3d7ff;
     font-size: 1.3vw;
+    /* font-size: 20px; */
     font-weight: 600;
     margin-right: 65vw;
 }
@@ -44,22 +45,26 @@ ul{
     text-decoration: none;
     color: #b3d7ff;
     font-size: 1.2vw;
+    /* font-size: 20px; */
     font-weight: 520;
 }
 
 /* Home page  */
 
 #bio{
+    /* border: 1px solid black; */
     display: flex;
     height: 50%;
-    margin-top: 15vh;
+    margin-top: 25vh;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #intro{
-    width: fit-content;
-    /* margin-top: 190px; */
-    margin-top: 23vh;
-    /* margin-left: 200px; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 15vw;
 }
 
@@ -67,8 +72,9 @@ ul{
 #hw{
     /* color: yellow; */
     color: #ffffcc;
+    text-align: left;
     font-weight: 800;
-    font-size: 6vh;
+    font-size: 4vw;
     position: relative;
     opacity: 0;
     left: -100%;
@@ -85,7 +91,8 @@ ul{
 /* Other content  */
 .mi{
     color:#dddddd;
-    font-size: 2.3vh;
+    margin-right: auto;
+    font-size: 1.5vw;
     font-weight: 400;
     position: relative;
 	opacity: 0;
@@ -101,16 +108,43 @@ ul{
     }
 }
 
+#hello{
+    color: #b3d7ff; 
+    padding-left: 0.5vw;
+    margin-right: auto;
+    font-size: 1.5vw;
+    font-weight: 400;
+    position: relative;
+	opacity: 0;
+	/* top: 100%; */
+    left: -100%;
+    animation: slide-inr 0.9s forwards;
+}
+
 /* Home page image  */
 /* Home page image  */
 #image{
+    display: flex;
+    align-items: center;
     background-image: url("Assets/IMG_20200816_173312-compressed-3.jpg");
     background-size: cover;
-    margin-left: 18vw;
-    /* margin-top: 70px; */
-    margin-top: 9vh;
-    /* width: 350px; */
-    width: 24vw;
-    height: 42vh;
+    margin-right: 9vw;
+    width:28vw;
+    height:28vw;
     border-radius: 50%;
+
+    /* Animation  */
+    position: relative;
+	opacity: 0;
+    right: -100%;
+    animation: slide-img 0.7s forwards;
 }
+
+@keyframes slide-img {
+    to {
+        top: 0;
+        right: 0;
+        opacity: 1;
+    }
+}
+
