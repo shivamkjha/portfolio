@@ -31,8 +31,6 @@ ul{
     justify-content: center;
     align-items: center;
     height: 8vh;
-    margin: 0 1%;
-    
 }
 
 .navbar li{
@@ -40,13 +38,6 @@ ul{
     width: 8%;
     text-align: center;
 }
-
-/* #name{
-    color: #b3d7ff;
-    font-size: 2vh;
-    font-weight: 600;
-    margin-right: auto;
-} */
 .navbar li a{
     text-decoration: none;
     color: #b3d7ff;
@@ -59,6 +50,35 @@ ul{
     cursor: pointer;
 }
 
+/* Media Query for Navbar to make it look good on phone */
+@media (max-width:600px) {
+    .navbar{
+        height: 6vh;
+    }
+    .navbar li{
+        width: 25%;
+        padding-top: 1vh;
+
+
+    }
+    .navbar li a{
+        font-size: 5vw;
+    }
+    .navbar li a:hover {
+        color: #ffffcc;
+        font-size: 5.5vw;
+        cursor: pointer;
+    }
+}
+
+/* #name{
+    color: #b3d7ff;
+    font-size: 2vh;
+    font-weight: 600;
+    margin-right: auto;
+} */
+
+
 
 /* Home page  */
 
@@ -69,6 +89,7 @@ ul{
     margin-top: 12vw;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 #intro{
